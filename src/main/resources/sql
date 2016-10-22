@@ -1,0 +1,12 @@
+CREATE TABLE `customer` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) DEFAULT NULL,
+  `contact` varchar(255) DEFAULT NULL,
+  `telephone` varchar(255) DEFAULT NULL,
+  `email` varchar(255) DEFAULT NULL,
+  `remark` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
+
+INSERT INTO customer (name, contact, telephone, email, remark)  VALUES
+('ewrwer', 'fdsfds', '2342432', 'erere@dfd.com', null);
