@@ -36,4 +36,20 @@ public class CustomerServiceTest {
         boolean result = customService.createCutomer(fileMap);
         Assert.assertTrue(result);
     }
+
+    @Test
+    public void updateCustomerTest() throws Exception {
+        long id = 1;
+        Map<String, Object> fieldMap = new HashMap<String, Object>();
+        fieldMap.put("contact", "Eric");
+        boolean result = customService.updateCustomer(id, fieldMap);
+        Assert.assertTrue(result);
+    }
+
+    @Test
+    public void deleteCustomerTest() throws Exception {
+        long id = 1;
+        boolean result = customService.deleteCustomer(id);
+        Assert.assertTrue(result);
+    }
 }
